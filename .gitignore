@@ -1,3 +1,6 @@
+ip_address.txt
+.terraform/
+
 # Compiled class file
 *.class
 
