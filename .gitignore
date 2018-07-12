@@ -1,6 +1,7 @@
 ip_address.txt
 .terraform/
 terraform.tfstate.backup
+terraform.tfstate
 
 # Compiled class file
 *.class
