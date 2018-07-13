@@ -5,9 +5,11 @@ provider "aws" {
 resource "aws_instance" "example" {
   ami           = "ami-44bf9f21"
   instance_type = "t2.micro"
-
+  iam_instance_profile="${aws_iam_instance_profile.ec2-role.name}"
+  key_name = "gabriel"
+ 
   tags {
-    Name = "gabriel-terraform-example"
+    Name = "gabriel-terraform-iam"
   }
 
   provisioner "local-exec" {
